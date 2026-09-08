@@ -1,25 +1,20 @@
 # Measuring Tree Structure from a Lidar Point Cloud
 
-> **Part of a two-repo lidar activity sequence.** This is **activity
-> 3** in the sequence. Intial activities 1-2 available in a seperate repository.
-> - [Activities 1-2: Lidar Point Clouds and Gridded Data for Forest Analysis](https://github.com/OpenForest4D/lidar_basic_concepts_and_exercises)
+This repository holds a hands-on activity that introduces two structural measurements of a tree. Canopy height describes how tall a tree stands from the ground to its top. Crown width describes how far the tree's branches spread. Both can be measured directly from a lidar point cloud, without going into the field.
 
+Students work in CloudCompare, a free and open source point cloud viewer used in surveying, forestry and the geosciences. Unlike a browser-based viewer, CloudCompare runs on the student's own machine and gives direct access to the full point cloud rather than a rendered preview. Students use the point picking tool to select points and read the distance between them, repeat each measurement five times to see how the value shifts with each pick, and then average the results.
 
-This repository holds a hands-on activity that introduces two structural measurements of a tree. Canopy height describes how tall a tree stands from the ground to its top. Crown width describes how far its branches spread. Both are measured directly from a lidar point cloud, without going into the field.
+The activity uses two versions of the same dataset. The standard point cloud stores each Z value as elevation above sea level, so a tree on a hill carries the hill's height inside its Z value. The normalized point cloud has the terrain removed, so the ground sits flat at zero and Z becomes canopy height directly. Comparing the two shows students what normalization does and its impact in measuring trees. 
 
-Students work in CloudCompare, a free and open source point cloud viewer used in surveying, forestry and geoscience. Unlike a browser-based viewer, CloudCompare runs on the student's own machine and gives direct access to the full point cloud rather than a rendered preview. Students use the point picking tool to select points and read the distance between them, repeat each measurement five times to see how the value shifts with each pick, and then average the results.
-
-The activity uses two versions of the same dataset. The standard point cloud stores each Z value as elevation above sea level, so a tree on a hill carries the hill's height inside its Z value. The normalized point cloud has the terrain removed, so the ground sits flat at zero and Z becomes canopy height directly. Comparing the two shows students what normalization does and why it matters at landscape scale.
-
-**Learning goal:** By the end of this activity, students will be able to measure canopy height and crown width from a lidar point cloud in CloudCompare, and explain how height normalization changes what those measurements mean.
+**Learning goal:** By the end of this activity, students will be able to measure canopy height and crown width from a lidar point cloud in CloudCompare and explain why multiple measurements of the same feature can vary. 
 
 **Objectives:**
 
-* Define canopy height and crown width, and identify the CloudCompare tools used to measure them.
+* Define canopy height and crown width.
+* Identify the CloudCompare tools used to measure canopy height and crown width.
 * Measure canopy height on both the standard and normalized clouds, and crown width along two perpendicular diameters.
 * Compare five repeat measurements per tree and account for the spread.
-* Diagnose a height value and identify which cloud it came from.
-* Complete the measurement tables and report an average canopy height and crown width for each tree.
+* Complete the measurement tables and report and justify an average canopy height and crown width for each tree.
 
 ## Audience
 
@@ -72,6 +67,10 @@ lidar_applied_tree_measurements/
 ```
 
 ## For Instructors
+
+> **Part of a two-repo lidar activity sequence.** This is **activity
+> 3** in the sequence. Intial activities 1-2 available in a seperate repository.
+> - [Activities 1-2: Lidar Point Clouds and Gridded Data for Forest Analysis](https://github.com/OpenForest4D/lidar_basic_concepts_and_exercises)
 
 The `.docx` activity sheet is fully editable, allowing you to adapt it to your course needs. For an answer key to the in-activity questions, please contact [OpenForest4D](https://openforest4d.org/contact/).
 
