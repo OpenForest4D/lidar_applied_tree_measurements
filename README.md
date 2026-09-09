@@ -1,3 +1,5 @@
+[![NSF-1948997](https://img.shields.io/badge/NSF-2409885-blue.svg)](https://nsf.gov/awardsearch/showAward?AWD_ID=2409885) [![NSF-2409886](https://img.shields.io/badge/NSF-2409886-blue.svg)](https://nsf.gov/awardsearch/showAward?AWD_ID=2409886) [![NSF-2409887](https://img.shields.io/badge/NSF-2409887-blue.svg)](https://nsf.gov/awardsearch/showAward?AWD_ID=2409887)
+
 # Measuring Tree Structure from a Lidar Point Cloud
 
 This repository holds a hands-on activity that introduces two structural measurements of a tree. Canopy height describes how tall a tree stands from the ground to its top. Crown width describes how far the tree's branches spread. Both can be measured directly from a lidar point cloud, without going into the field.
